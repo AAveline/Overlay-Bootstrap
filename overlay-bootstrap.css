@@ -1,0 +1,722 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***************************************/
+/********** OVERLAY BOOTSTRAP **********/
+/******** V 1.0 @Copyright 2014 ********/
+/************* Open Source *************/
+/*********** Aymeric Aveline ***********/
+
+
+.panel-body{
+	position:relative;
+	overflow:hidden;
+	clear:both;
+}
+
+/***************************************/
+/************ PANEL DEFAULT ************/
+/***************************************/
+
+
+/* Panel Up */
+
+.panel-default-overlay-up{
+	position: absolute;
+	top: 100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#f5f5f5;
+	color:#333;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-default-overlay-up{
+	visibility: visible;
+	opacity: 1;
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}
+
+/* Panel Down */
+
+.panel-default-overlay-down{
+	position: absolute;
+	top: -100%; 
+	left:0;
+	width: 100%; 
+	height:100%;
+	background-color:#f5f5f5;
+	color:#333;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-default-overlay-down{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    -webkit-transform: translateY(100%);  
+    transform: translateY(100%);
+}
+
+/* Panel Left */
+
+.panel-default-overlay-left{
+	position: absolute; 
+	top: 0; 
+	left:-100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#f5f5f5;
+	color:#333; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-default-overlay-left{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(100%);  
+    -o-transform: translateX(100%);  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);
+}
+
+/* Panel Right */
+
+.panel-default-overlay-right{
+	position: absolute; 
+	top: 0; 
+	left:100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#f5f5f5;
+	color:#333; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 
+	
+}
+
+.panel-body:hover  .panel-default-overlay-right{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(-100%);  
+    -o-transform: translateX(-100%);  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);
+}
+
+/***************************************/
+/************ PANEL PRIMARY ************/
+/***************************************/
+
+/* Panel Up */
+
+.panel-primary-overlay-up{
+	
+	position: absolute;
+	top: 100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#337ab7;
+	color:#FFF;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-primary-overlay-up{
+	visibility: visible;
+	opacity: 1;
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}
+
+/* Panel Down */
+
+.panel-primary-overlay-down{
+	position: absolute;
+	top: -100%; 
+	left:0;
+	width: 100%; 
+	height:100%;
+	background-color:#337ab7;
+	color:white;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-primary-overlay-down{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    -webkit-transform: translateY(100%);  
+    transform: translateY(100%);
+}
+
+/* Panel Left */
+
+.panel-primary-overlay-left{
+	position: absolute; 
+	top: 0; 
+	left:-100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#337ab7;
+	color:white; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-primary-overlay-left{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(100%);  
+    -o-transform: translateX(100%);  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);
+}
+
+/* Panel Right */
+
+.panel-primary-overlay-right{
+	position: absolute; 
+	top: 0; 
+	left:100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#337ab7;
+	color:white; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 
+	
+}
+
+.panel-body:hover  .panel-primary-overlay-right{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(-100%);  
+    -o-transform: translateX(-100%);  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);
+}
+
+/***************************************/
+/************ PANEL SUCCESS ************/
+/***************************************/
+
+/* Panel Up */
+
+.panel-success-overlay-up{
+	position: absolute;
+	top: 100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#dff0d8;
+	visibility: hidden; 
+	opacity: 0;
+	color:#3c763d;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-success-overlay-up{
+	visibility: visible;
+	opacity: 1;
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}
+
+/* Panel Down */
+
+.panel-success-overlay-down{
+	position: absolute;
+	top: -100%; 
+	left:0;
+	width: 100%; 
+	height:100%;
+	background-color:#dff0d8;
+	visibility: hidden; 
+	opacity: 0;
+	color:#3c763d;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-success-overlay-down{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    -webkit-transform: translateY(100%);  
+    transform: translateY(100%);
+}
+
+/* Panel Left */
+
+.panel-success-overlay-left{
+	position: absolute; 
+	top: 0; 
+	left:-100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#dff0d8;
+	color:#3c763d; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-success-overlay-left{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(100%);  
+    -o-transform: translateX(100%);  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);
+}
+
+/* Panel Right */
+
+.panel-success-overlay-right{
+	position: absolute; 
+	top: 0; 
+	left:100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#dff0d8;
+	color:#3c763d; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 
+	
+}
+
+.panel-body:hover  .panel-success-overlay-right{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(-100%);  
+    -o-transform: translateX(-100%);  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);
+}
+
+
+/***************************************/
+/************ PANEL WARNING ************/
+/***************************************/
+
+/* Panel Up */
+
+.panel-warning-overlay-up{
+	position: absolute;
+	top: 100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#fcf8e3;
+	color: #8a6d3b;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-warning-overlay-up{
+	visibility: visible;
+	opacity: 1;
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}
+
+/* Panel Down */
+
+.panel-warning-overlay-down{
+	position: absolute;
+	top: -100%; 
+	left:0;
+	width: 100%; 
+	height:100%;
+	background-color:#fcf8e3;
+	color: #8a6d3b;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-warning-overlay-down{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    -webkit-transform: translateY(100%);  
+    transform: translateY(100%);
+}
+
+/* Panel Left */
+
+.panel-warning-overlay-left{
+	position: absolute; 
+	top: 0; 
+	left:-100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#fcf8e3;
+	color: #8a6d3b;
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-warning-overlay-left{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(100%);  
+    -o-transform: translateX(100%);  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);
+}
+
+/* Panel Right */
+
+.panel-warning-overlay-right{
+	position: absolute; 
+	top: 0; 
+	left:100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#fcf8e3;
+	color: #8a6d3b;	 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 
+	
+}
+
+.panel-body:hover  .panel-warning-overlay-right{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(-100%);  
+    -o-transform: translateX(-100%);  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);
+}
+
+
+/***************************************/
+/************ PANEL DANGER ************/
+/***************************************/
+
+/* Panel Up */
+
+.panel-danger-overlay-up{
+	position: absolute;
+	top: 100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#f2dede;
+	color: #a94442;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-danger-overlay-up{
+	visibility: visible;
+	opacity: 1;
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}
+
+/* Panel Down */
+
+.panel-danger-overlay-down{
+	position: absolute;
+	top: -100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#f2dede;
+	color: #a94442;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-danger-overlay-down{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    -webkit-transform: translateY(100%);  
+    transform: translateY(100%);
+}
+
+/* Panel Left */
+
+.panel-danger-overlay-left{
+	position: absolute; 
+	top: 0; 
+	left:-100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#f2dede;
+	color: #a94442;
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-danger-overlay-left{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(100%);  
+    -o-transform: translateX(100%);  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);
+}
+
+/* Panel Right */
+
+.panel-danger-overlay-right{
+	position: absolute; 
+	top: 0; 
+	left:100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#f2dede;
+	color: #a94442;	 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 
+	
+}
+
+.panel-body:hover  .panel-danger-overlay-right{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(-100%);  
+    -o-transform: translateX(-100%);  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);
+}
+
+
+/***************************************/
+/************ PANEL INFO ************/
+/***************************************/
+
+/* Panel Up */
+
+.panel-info-overlay-up{
+	position: absolute;
+	top: 100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#d9edf7;
+	color: #31708f;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-info-overlay-up{
+	visibility: visible;
+	opacity: 1;
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}
+
+/* Panel Down */
+
+.panel-info-overlay-down{
+	position: absolute;
+	top: -100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#d9edf7;
+	color: #31708f;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.panel-body:hover .panel-info-overlay-down{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    -webkit-transform: translateY(100%);  
+    transform: translateY(100%);
+}
+
+/* Panel Left */
+
+.panel-info-overlay-left{
+	position: absolute; 
+	top: 0; 
+	left:-100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#d9edf7;
+	color: #31708f;
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 	
+}
+
+.panel-body:hover .panel-info-overlay-left{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(100%);  
+    -o-transform: translateX(100%);  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);
+}
+
+/* Panel Right */
+
+.panel-info-overlay-right{
+	position: absolute; 
+	top: 0; 
+	left:100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#d9edf7;
+	color: #31708f;	 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 
+	
+}
+
+.panel-body:hover  .panel-info-overlay-right{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(-100%);  
+    -o-transform: translateX(-100%);  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);
+}
