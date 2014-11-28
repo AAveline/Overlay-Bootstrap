@@ -49,7 +49,7 @@ Caption:
 In your caption's class, you only have to add an id with the effect desiring: id="caption-right" or id="caption-top".
 
 Example:
-
+<code>
 
 /*
     <div class="panel-body">
@@ -107,4 +107,4 @@ Caption on image
     </div>
 */
 
-
+</code>
