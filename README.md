@@ -72,10 +72,15 @@ Example:
     </div>
     
 Caption on image
+
     <div class="thumbnail">
+    
     <img src="..." alt="image"  />
+    
     For a bottom to top caption
+    
         <div class="caption" id="caption-up">
+        
          <h3>Thumbnail label</h3>
          <p>Some sample text. </p>
          <p>
@@ -87,6 +92,7 @@ Caption on image
             </a>
          </p>
     </div>
+    
     </div>
     
     <div class="thumbnail">
