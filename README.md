@@ -51,18 +51,18 @@ In your caption's class, you only have to add an id with the effect desiring: id
 Example:
 
 
-//Overlay on panel's body
+/*
     <div class="panel-body">
         <p>Example</p>
         
-        // An right to left primary's style overlay
+         An right to left primary's style overlay
         
         <div class="panel-primary-overlay-right">
             <p>Your Overlay!</p>
         </div>
     </div>
     
-    // Or a top to bottom danger's style overlay
+    Or a top to bottom danger's style overlay
     <div class="panel-body">
         <p>Example 2</p>
         
@@ -71,10 +71,10 @@ Example:
         </div>
     </div>
     
-//Caption on image
+Caption on image
     <div class="thumbnail">
     <img src="..." alt="image"  />
-    //For a bottom to top caption
+    For a bottom to top caption
         <div class="caption" id="caption-up">
          <h3>Thumbnail label</h3>
          <p>Some sample text. </p>
@@ -88,10 +88,10 @@ Example:
          </p>
     </div>
     </div>
-    //OR
+    
     <div class="thumbnail">
     <img src="..." alt="image"  />
-    //For a left to right caption
+    For a left to right caption
     <div class="caption" id="caption-right">
          <h3>Thumbnail label</h3>
          <p>Some sample text. </p>
@@ -105,5 +105,6 @@ Example:
          </p>
     </div>
     </div>
+*/
 
 
