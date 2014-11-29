@@ -1,236 +1,1239 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Overlay-bootstrap by karbonn</title>
-  
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/overlay-bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Overlay-bootstrap by karbonn</title>
+ <link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="overlay-bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/karbonn/Overlay-Bootstrap">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/karbonn/Overlay-Bootstrap/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/karbonn/Overlay-Bootstrap/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
 
+<body>
+<div class="container">
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Overlay Bootstrap</a>
+  </div>
+  <div class="navbar-collapse collapse navbar-inverse-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="https://github.com/karbonn/Overlay-Bootstrap">View On GitHub</a></li>
+     
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://github.com/karbonn/Overlay-Bootstrap/zipball/master">ZIP</a></li>
+          
+          <li class="divider"></li>
+          
+          <li><a href="https://github.com/karbonn/Overlay-Bootstrap/tarball/master">TAR</a></li>
+         
+        </ul>
+      </li>
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+        <li><a href="#overlay">Overlay</a></li>
+        <li class="divider"></li>
+          <li><a href="#caption">Caption</a></li>
+          <li class="divider"></li>
+          <li><a href="#HowToUse">How to use</a></li>
+         
+        </ul>
+      </li>
+    </ul>
    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="https://github.com/karbonn">Par Aymeric Aveline</a></li>
+      
+    </ul>
+  </div>
+</div><hr >
+<div class="row" id="overlay">
+	<div class="col-md-12"><hr>
+    <h1 class="text-center">Overlay</h1><hr><div class="col-md-6">
+    <blockquote>
+  <h3>6 styles for the 6 Bootstrap's panels:</h3>
+  <small class="text-muted">Default <i class="fa fa-camera-retro fa-lg"></i> </small>
+  <small class="text-primary">Primary</small>
+  <small class="text-success">Success</small>
+  <small class="text-warning">Warning</small>
+  <small class="text-danger">Danger</small>
+  <small class="text-info">Info</small>
+</blockquote>
+</div><div class="col-md-6">
+<blockquote class="pull-right">
+  <h3>4 displays settings</h3>
+  <small class="text-primary">Top to bottom <cite title="Source Title">(down in Overlay Bootstrap) </cite></small>
+  <small class="text-primary">Bottom to top <cite title="Source Title">(up in Overlay Bootstrap) </cite></small>
+  <small class="text-primary">Left to right <cite title="Source Title">(left in Overlay Bootstrap) </cite></small>
+  <small class="text-primary">Right to left <cite title="Source Title">(right in Overlay Bootstrap) </cite></small>
+</blockquote></div>
+   </div>
+</div><hr>
+	<div class="row">
+    <!-- Default Overlay -->
+		<div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">Class</button></h3>
 
-      <section>
-        <div id="title">
-          <h1>Overlay-bootstrap</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/karbonn">karbonn</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-</section>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
        
-        <div class="row">
-          <div class="col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2>Example 1</h2>
-              </div>
-              <div class="panel-body">
-              <blockquote>
-                <h3>Some sample text</h3>
-              </blockquote>  
-              <div class="panel-default-overlay-down">
-                <h3>Default Overlay</h3>
-                <a href="" class="btn btn-default">Learn More</a>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2>Example 2</h2>
-              </div>
-              <div class="panel-body">
-                <p>Some sample text</p>
-              <div class="panel-primary-overlay-up">
-                <h3>Default Overlay</h3>
-                <a href="" class="btn btn-default">Learn More</a>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2>Example 3</h2>
-              </div>
-              <div class="panel-body">
-                <p>Some sample text</p>
-              <div class="panel-danger-overlay-right">
-                <h3>Default Overlay</h3>
-                <a href="" class="btn btn-default">Learn More</a>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h2>Example 1</h2>
-              </div>
-              <div class="panel-body">
-                <p>Some sample text</p>
-              <div class="panel-warning-overlay-left">
-                <h3>Default Overlay</h3>
-                <a href="" class="btn btn-default">Learn More</a>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-<h1><a id="overlay-bootstrap-simple-extension-for-bootstrap" class="anchor" href="#overlay-bootstrap-simple-extension-for-bootstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overlay Bootstrap, simple extension for Bootstrap</h1>
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-default-overlay-down</h2>
+      </div>
 
-<h2>
-<a id="what-is-overlay-bootstrap" class="anchor" href="#what-is-overlay-bootstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is Overlay Bootstrap?</h2>
-
-<p>Just a simple extension who add a new functionality to Bootstrap which consist to display an overlay over the Bootstrap's panel body with cool animation. No need to add new rules in a css's files, you only have to add a new class on your div! </p>
-
-<p>You can also add a cool caption on your images!</p>
-
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
-
-<p>Add in the head of your file (after Bootstrap's file) the overlay-bootstrap.css or overlay-bootstrap.min.css.</p>
-
-<h2>
-<a id="functionalities" class="anchor" href="#functionalities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functionalities</h2>
-
-<p>By default, Overlay Bootstrap contains 6 differents styles and 4 displays settings.</p>
-
-<h3>
-<a id="overlay" class="anchor" href="#overlay" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overlay:</h3>
-
-<h4>
-<a id="6-styles-for-the-6-bootstraps-panels" class="anchor" href="#6-styles-for-the-6-bootstraps-panels" aria-hidden="true"><span class="octicon octicon-link"></span></a>6 styles for the 6 Bootstrap's panels:</h4>
-
-<p>-Default
--Primary
--Success
--Warning
--Danger
--Info</p>
-
-<h4>
-<a id="4-displays-settings" class="anchor" href="#4-displays-settings" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 displays settings:</h4>
-
-<p>-Top to bottom (down in Overlay Bootstrap)
--Bottom to top (up in Overlay Bootstrap)
--Left to right (left in Overlay Bootstrap)
--Right to left (right in Overlay Bootstrap)</p>
-
-<h3>
-<a id="caption" class="anchor" href="#caption" aria-hidden="true"><span class="octicon octicon-link"></span></a>Caption:</h3>
-
-<h4>
-<a id="4-displays-settings-1" class="anchor" href="#4-displays-settings-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 displays settings:</h4>
-
-<p>-Bottom to top (up in Overlay Bootstrap) 
--Top to bottom (down in Overlay Bootstrap) 
--Left to right (right in Overlay Bootstrap) 
--Right to left (left in Overlay Bootstrap)</p>
-
-<h2>
-<a id="how-to-use-overlay-bootstrap" class="anchor" href="#how-to-use-overlay-bootstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use Overlay Bootstrap?</h2>
-
-<p>Overlay:
-In your panel body, add a new class with the style and the animation desiring.</p>
-
-<p>Caption:
-In your caption's class, you only have to add an id with the effect desiring: id="caption-right" or id="caption-top".</p>
-
-<p>Example:
-<code></code></p>
-
-<pre><code>&lt;div class="panel-body"&gt;
-    &lt;p&gt;Example&lt;/p&gt;
-
-     An right to left primary's style overlay
-
-    &lt;div class="panel-primary-overlay-right"&gt;
-        &lt;p&gt;Your Overlay!&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-Or a top to bottom danger's style overlay
-&lt;div class="panel-body"&gt;
-    &lt;p&gt;Example 2&lt;/p&gt;
-
-    &lt;div class="panel-danger-overlay-down"&gt;
-        &lt;p&gt;Your Overlay!&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<p>Caption on image</p>
-
-<pre><code>&lt;div class="thumbnail"&gt;
-
-&lt;img src="..." alt="image"  /&gt;
-
-For a bottom to top caption
-
-    &lt;div class="caption" id="caption-up"&gt;
-
-     &lt;h3&gt;Thumbnail label&lt;/h3&gt;
-     &lt;p&gt;Some sample text. &lt;/p&gt;
-     &lt;p&gt;
-        &lt;a href="#" class="btn btn-primary" role="button"&gt;
-           Button
-        &lt;/a&gt; 
-        &lt;a href="#" class="btn btn-default" role="button"&gt;
-           Button
-        &lt;/a&gt;
-     &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class="thumbnail"&gt;
-&lt;img src="..." alt="image"  /&gt;
-For a left to right caption
-&lt;div class="caption" id="caption-right"&gt;
-     &lt;h3&gt;Thumbnail label&lt;/h3&gt;
-     &lt;p&gt;Some sample text. &lt;/p&gt;
-     &lt;p&gt;
-        &lt;a href="#" class="btn btn-primary" role="button"&gt;
-           Button
-        &lt;/a&gt; 
-        &lt;a href="#" class="btn btn-default" role="button"&gt;
-           Button
-        &lt;/a&gt;
-     &lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-<p></p>
-      </section>
-
+     
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Top to Bottom</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-default-overlay-down">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-heading"><h3>Example
+					<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal2">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-default-overlay-up</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Bottom to Top</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-default-overlay-up">
+					<h3>Default Overlay</h3>
+                    <button title="" data-original-title="" type="button" class="btn" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal3">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-default-overlay-left</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Left to Right</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-default-overlay-left">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3>Example
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal4">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-default-overlay-right</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Right to Left</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-default-overlay-right">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+</div>
+</div><hr>
+<!-- Primary Overlay -->
+	<div class="row">
+    <!-- Default Overlay -->
+		<div class="col-md-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal5">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-primary-overlay-down</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Top to Bottom</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-primary-overlay-down">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading"><h3>Example
+					<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal6">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-primary-overlay-up</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Bottom to Top</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-primary-overlay-up">
+					<h3>Default Overlay</h3>
+              
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="col-md-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal7">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-primary-overlay-left</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Left to Right</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-primary-overlay-left">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3>Example
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal8">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-primary-overlay-right</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Right to Left</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-primary-overlay-right">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+<hr>
+	<div class="row">
+    <!-- Success Overlay -->
+		<div class="col-md-3">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal9">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-success-overlay-down</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Top to Bottom</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-success-overlay-down">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-success">
+				<div class="panel-heading"><h3>Example
+					<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModa20">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModa20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-success-overlay-up</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Bottom to Top</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-success-overlay-up">
+					<h3>Default Overlay</h3>
+              
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="col-md-3">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModa21">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModa21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-success-overlay-left</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Left to Right</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-success-overlay-left">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<h3>Example
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal22">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+     
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-success-overlay-right</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Right to Left</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-success-overlay-right">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+
+<hr>
+	<div class="row">
+    <!-- Warning Overlay -->
+		<div class="col-md-3">
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal23">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-warning-overlay-down</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Top to Bottom</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-warning-overlay-down">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-warning">
+				<div class="panel-heading"><h3>Example
+					<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal24">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal24" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-warning-overlay-up</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Bottom to Top</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-warning-overlay-up">
+					<h3>Default Overlay</h3>
+              
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="col-md-3">
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal25">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal25" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-warning-overlay-left</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Left to Right</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-warning-overlay-left">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-warning">
+				<div class="panel-heading">
+					<h3>Example
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal26">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal26" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-warning-overlay-right</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Right to Left</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-warning-overlay-right">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+
+<hr>
+	<div class="row">
+    <!-- Danger Overlay -->
+		<div class="col-md-3">
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal27">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal27" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-danger-overlay-down</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Top to Bottom</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-danger-overlay-down">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-danger">
+				<div class="panel-heading"><h3>Example
+					<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal28">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal28" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-danger-overlay-up</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Bottom to Top</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-danger-overlay-up">
+					<h3>Default Overlay</h3>
+              
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="col-md-3">
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal29">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal29" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-danger-overlay-left</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Left to Right</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-danger-overlay-left">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<h3>Example
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal30">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal30" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-danger-overlay-right</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Right to Left</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-danger-overlay-right">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+
+<hr>
+	<div class="row">
+    <!-- Info Overlay -->
+		<div class="col-md-3">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal31">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal32" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-info-overlay-down</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Top to Bottom</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-info-overlay-down">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-info">
+				<div class="panel-heading"><h3>Example
+					<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal32">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal32" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-info-overlay-up</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Bottom to Top</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-info-overlay-up">
+					<h3>Default Overlay</h3>
+              
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="col-md-3">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3>Example 
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal33">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal33" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-info-overlay-left</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Left to Right</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-info-overlay-left">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+        </div>
+        <div class="col-md-3">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3>Example
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal34">Class</button></h3>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal34" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       
+      </div>
+      <div class="modal-body">
+        
+        <h2 class="text-danger">.panel-info-overlay-right</h2>
+      </div>
+
+     
+    </div>
+  </div>
+</div>
+				</div>
+			<div class="panel-body">
+				<p>Overlay Right to Left</p>
+				<a href="" class="btn btn-default">Learn More</a>
+
+				<div class="panel-info-overlay-right">
+					<h3>Default Overlay</h3>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+<hr>
+<div class="row" id="caption">
+<div class="col-md-12">
+    <h1 class="text-center" >Caption</h1><hr><div class="col-md-6">
+    <blockquote>
+  <h3>4 caption's styles</h3>
+  
+  <small class="text-primary">Top to Bottom (down in Overlay Bootstrap)</small>
+  <small class="text-primary">Bottom to top (up in Overlay Bootstrap)</small>
+  <small class="text-primary">-Left to right (left in Overlay Bootstrap)</small>
+  <small class="text-primary">Right to left (right in Overlay Bootstrap)</small>
+</blockquote>
+</div>
+</div>
+
+<hr>
+<div class="row" >
+<h2>Caption Up (#caption-up)</h2><hr>
+<div class="col-md-4">
+<div class="thumbnail">
+    <img src="http://placehold.it/350x250">
     
-  </body>
+  <div class="caption" id="caption-up">
+         <h3>Thumbnail label</h3>
+         <h4>Some sample text.</h4>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+<div class="thumbnail">
+    <img src="http://placehold.it/250x350">
+    
+  <div class="caption" id="caption-up">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text.</p>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+<div class="thumbnail">
+    <img src="http://placehold.it/250x250">
+    
+  <div class="caption" id="caption-up">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. </p>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+
+</div>
+<hr>
+<div class="row">
+<h2>Caption Down (#caption-down)</h2><hr>
+<div class="col-md-4">
+<div class="thumbnail">
+    <img src="http://placehold.it/350x250">
+    
+  <div class="caption" id="caption-down">
+         <h3>Thumbnail label</h3>
+         <h4>Some sample text.</h4>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+<div class="thumbnail">
+    <img src="http://placehold.it/250x350">
+    
+  <div class="caption" id="caption-down">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text.</p>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+<div class="thumbnail">
+    <img src="http://placehold.it/250x250">
+    
+  <div class="caption" id="caption-down">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. </p>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+
+</div>
+<hr>
+<div class="row">
+<h2>Caption left (#caption-left)</h2><hr>
+<div class="col-md-4">
+<div class="thumbnail">
+    <img src="http://placehold.it/350x250">
+    
+  <div class="caption" id="caption-left">
+         <h3>Thumbnail label</h3>
+         <h4>Some sample text.</h4>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+<div class="thumbnail">
+    <img src="http://placehold.it/250x350">
+    
+  <div class="caption" id="caption-left">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text.</p>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+<div class="thumbnail">
+    <img src="http://placehold.it/250x250">
+    
+  <div class="caption" id="caption-left">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. </p>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+
+</div>
+<hr>
+<div class="row">
+<h2>Caption right (#caption-right)</h2><hr>
+<div class="col-md-4">
+<div class="thumbnail">
+    <img src="http://placehold.it/350x250">
+    
+  <div class="caption" id="caption-right">
+         <h3>Thumbnail label</h3>
+         <h4>Some sample text.</h4>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+<div class="thumbnail">
+    <img src="http://placehold.it/250x350">
+    
+  <div class="caption" id="caption-right">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text.</p>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+<div class="thumbnail">
+    <img src="http://placehold.it/250x250">
+    
+  <div class="caption" id="caption-right">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. </p>
+         <p>
+            <a href="#" class="btn btn-primary" role="button">
+               Button
+            </a> 
+            <a href="#" class="btn btn-default" role="button">
+               Button
+            </a>
+         </p>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="row" id="HowToUse"><hr>
+<h1 class="text-center">How to use Overlay Bootstrap?</h1><hr>
+<div class="col-md-12">
+<div class="well">
+  <h2 class="text-info">Overlay</h2>
+  <blockquote><p> In your panel body, add a new div with the name which contains the style and the animation desiring.</p>
+  <p>Example:</p>
+  <p>A top to bottom danger's style overlay<br /><br />
+		div class="panel-body"<br />
+   			Your text<br />
+            
+    		div class="panel-danger-overlay-down"<br />
+        		Your Overlay!<br />
+   	    	/div<br />
+	   /div<br />
+       </p>
+  </blockquote>
+  
+</div>
+</div>
+<div class="col-md-12">
+<div class="well">
+  <h2 class="text-info">Caption</h2>
+  <blockquote><p> In your panel body, add a new div with the name which contains the style and the animation desiring.</p>
+  <p>Example:</p>
+  <p>For a bottom to top caption<br /><br />
+		div class="thumbnail"<br />
+
+			img src="..." alt="image" /><br />
+
+			For a bottom to top caption<br />
+
+    			div class="caption" id="caption-up"<br />
+
+     h3 Thumbnail label/h3<br />
+     
+     
+        a href="#" class="btn btn-primary" role="button"><br />
+           Button<br />
+        /a> <br />
+        
+	/div<br />
+	/div<br />
+       </p>
+  </blockquote>
+  
+</div>
+</div>
+</div>
+
+
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="bootstrap.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('button.btn').click(function(){
+		$(this).popover('show');
+	});
+});
+</script>
+</body>
 </html>
