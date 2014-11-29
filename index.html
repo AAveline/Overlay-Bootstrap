@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Overlay-bootstrap by karbonn</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/karbonn/Overlay-Bootstrap">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/karbonn/Overlay-Bootstrap/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/karbonn/Overlay-Bootstrap/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Overlay-bootstrap</h1>
+          <p></p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/karbonn">karbonn</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="overlay-bootstrap-simple-extension-for-bootstrap" class="anchor" href="#overlay-bootstrap-simple-extension-for-bootstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overlay Bootstrap, simple extension for Bootstrap</h1>
+
+<h2>
+<a id="what-is-overlay-bootstrap" class="anchor" href="#what-is-overlay-bootstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is Overlay Bootstrap?</h2>
+
+<p>Just a simple extension who add a new functionality to Bootstrap which consist to display an overlay over the Bootstrap's panel body with cool animation. No need to add new rules in a css's files, you only have to add a new class on your div! </p>
+
+<p>You can also add a cool caption on your images!</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add in the head of your file (after Bootstrap's file) the overlay-bootstrap.css or overlay-bootstrap.min.css.</p>
+
+<h2>
+<a id="functionalities" class="anchor" href="#functionalities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functionalities</h2>
+
+<p>By default, Overlay Bootstrap contains 6 differents styles and 4 displays settings.</p>
+
+<h3>
+<a id="overlay" class="anchor" href="#overlay" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overlay:</h3>
+
+<h4>
+<a id="6-styles-for-the-6-bootstraps-panels" class="anchor" href="#6-styles-for-the-6-bootstraps-panels" aria-hidden="true"><span class="octicon octicon-link"></span></a>6 styles for the 6 Bootstrap's panels:</h4>
+
+<p>-Default
+-Primary
+-Success
+-Warning
+-Danger
+-Info</p>
+
+<h4>
+<a id="4-displays-settings" class="anchor" href="#4-displays-settings" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 displays settings:</h4>
+
+<p>-Top to bottom (down in Overlay Bootstrap)
+-Bottom to top (up in Overlay Bootstrap)
+-Left to right (left in Overlay Bootstrap)
+-Right to left (right in Overlay Bootstrap)</p>
+
+<h3>
+<a id="caption" class="anchor" href="#caption" aria-hidden="true"><span class="octicon octicon-link"></span></a>Caption:</h3>
+
+<h4>
+<a id="4-displays-settings-1" class="anchor" href="#4-displays-settings-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 displays settings:</h4>
+
+<p>-Bottom to top (up in Overlay Bootstrap) 
+-Top to bottom (down in Overlay Bootstrap) 
+-Left to right (right in Overlay Bootstrap) 
+-Right to left (left in Overlay Bootstrap)</p>
+
+<h2>
+<a id="how-to-use-overlay-bootstrap" class="anchor" href="#how-to-use-overlay-bootstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use Overlay Bootstrap?</h2>
+
+<p>Overlay:
+In your panel body, add a new class with the style and the animation desiring.</p>
+
+<p>Caption:
+In your caption's class, you only have to add an id with the effect desiring: id="caption-right" or id="caption-top".</p>
+
+<p>Example:
+<code></code></p>
+
+<pre><code>&lt;div class="panel-body"&gt;
+    &lt;p&gt;Example&lt;/p&gt;
+
+     An right to left primary's style overlay
+
+    &lt;div class="panel-primary-overlay-right"&gt;
+        &lt;p&gt;Your Overlay!&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+Or a top to bottom danger's style overlay
+&lt;div class="panel-body"&gt;
+    &lt;p&gt;Example 2&lt;/p&gt;
+
+    &lt;div class="panel-danger-overlay-down"&gt;
+        &lt;p&gt;Your Overlay!&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Caption on image</p>
+
+<pre><code>&lt;div class="thumbnail"&gt;
+
+&lt;img src="..." alt="image"  /&gt;
+
+For a bottom to top caption
+
+    &lt;div class="caption" id="caption-up"&gt;
+
+     &lt;h3&gt;Thumbnail label&lt;/h3&gt;
+     &lt;p&gt;Some sample text. &lt;/p&gt;
+     &lt;p&gt;
+        &lt;a href="#" class="btn btn-primary" role="button"&gt;
+           Button
+        &lt;/a&gt; 
+        &lt;a href="#" class="btn btn-default" role="button"&gt;
+           Button
+        &lt;/a&gt;
+     &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="thumbnail"&gt;
+&lt;img src="..." alt="image"  /&gt;
+For a left to right caption
+&lt;div class="caption" id="caption-right"&gt;
+     &lt;h3&gt;Thumbnail label&lt;/h3&gt;
+     &lt;p&gt;Some sample text. &lt;/p&gt;
+     &lt;p&gt;
+        &lt;a href="#" class="btn btn-primary" role="button"&gt;
+           Button
+        &lt;/a&gt; 
+        &lt;a href="#" class="btn btn-default" role="button"&gt;
+           Button
+        &lt;/a&gt;
+     &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
