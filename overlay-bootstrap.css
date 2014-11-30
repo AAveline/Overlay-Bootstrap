@@ -722,6 +722,265 @@
 }
 
 
+/**********************************************/
+/** JUMBOTRONS FOR jumbotron-overlay-* CLASS **/
+/**********************************************/
+
+.jumbotron{
+	position:relative;
+	overflow:hidden;
+	clear:both;
+}
+.jumbotron-overlay-down *, .jumbotron-overlay-up *, .jumbotron-overlay-left *, .jumbotron-overlay-right *{
+	padding:30px 15px;margin-bottom:30px;
+	clear:both;
+}
+
+/* Jumbotron Up */
+
+.jumbotron-overlay-up{
+	position: absolute;
+	top: 100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#22334d;
+	color:#333;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 	
+}
+.jumbotron:hover .jumbotron-overlay-up{
+	z-index::1;
+	visibility: visible;
+	opacity: 0.9;
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}
+
+/* Jumbotron Down */
+
+.jumbotron-overlay-down{
+	position: absolute;
+	top: -100%; 
+	left:0;
+	width: 100%; 
+	height:100%;
+	background-color:#22334d;
+	color:#333;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out; 	
+}
+
+.jumbotron:hover .jumbotron-overlay-down{	
+	visibility: visible; 
+	opacity: 0.9; 
+	-moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    -webkit-transform: translateY(100%);  
+    transform: translateY(100%);
+}
+
+/* Jumbotron Left */
+
+.jumbotron-overlay-left{
+	position: absolute; 
+	top: 0; 
+	left:-100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#22334d;
+	color:#333; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 	
+}
+
+.jumbotron:hover .jumbotron-overlay-left{	
+	visibility: visible; 
+	opacity: 0.9; 
+	-moz-transform: translateX(100%);  
+    -o-transform: translateX(100%);  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);
+}
+
+/* Jumbotron Right */
+
+.jumbotron-overlay-right{
+	position: absolute; 
+	top: 0; 
+	left:100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#22334d;
+	color:#333; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 
+	
+}
+
+.jumbotron:hover  .jumbotron-overlay-right{	
+	visibility: visible; 
+	opacity: 0.9; 
+	-moz-transform: translateX(-100%);  
+    -o-transform: translateX(-100%);  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);
+}
+
+/******************************************************/
+/** List Groups FOR .list-group-item-overlay-* CLASS **/
+/******************************************************/
+
+.list-group{
+	position:relative;
+}
+
+.list-group-item{
+	position:relative;
+	overflow:hidden;
+	clear:both;
+}
+.list-group-item-overlay-up *, .list-group-item-overlay-down *, .list-group-item-overlay-left *, .list-group-item-overlay-right *{
+	clear:both;
+	margin-right:auto;
+	margin-top:auto;
+}
+
+/* List Group Up */
+
+.list-group-item-overlay-up{
+	position: absolute;
+	top: 100%;
+	left:0;
+	width: 100%;
+	height:100%;
+	background-color:#f5f5f5;
+	color:#333;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 	
+}
+.list-group-item:hover .list-group-item-overlay-up{
+	visibility: visible;
+	opacity: 1;
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}
+
+/* List Group Down */
+
+.list-group-item-overlay-down{
+	position: absolute;
+	top: -100%; 
+	left:0;
+	width: 100%; 
+	height:100%;
+	background-color:#f5f5f5;
+	color:#333;
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out; 	
+}
+
+.list-group-item:hover .list-group-item-overlay-down{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    -webkit-transform: translateY(100%);  
+    transform: translateY(100%);
+}
+
+/* List Group Left */
+
+.list-group-item-overlay-left{
+	position: absolute; 
+	top: 0; 
+	left:-100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#f5f5f5;
+	color:#333; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 	
+}
+
+.list-group-item:hover .list-group-item-overlay-left{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(100%);  
+    -o-transform: translateX(100%);  
+    -webkit-transform: translateX(100%);  
+    transform: translateX(100%);
+}
+
+/* List Group Right */
+
+.list-group-item-overlay-right{
+	position: absolute; 
+	top: 0; 
+	left:100%; 
+	width: 100%; 
+	height:100%; 
+	background-color:#f5f5f5;
+	color:#333; 
+	visibility: hidden; 
+	opacity: 0; 
+	-webkit-transition: all 0.5s ease-in-out; 
+	-moz-transition: all 0.5s ease-in-out; 
+	-ms-transition: all 0.5s ease-in-out; 
+	-o-transition: all 0.5s ease-in-out; 
+	transition: all 0.5s ease-in-out; 
+	
+}
+
+.list-group-item:hover  .list-group-item-overlay-right{	
+	visibility: visible; 
+	opacity: 1; 
+	-moz-transform: translateX(-100%);  
+    -o-transform: translateX(-100%);  
+    -webkit-transform: translateX(-100%);  
+    transform: translateX(-100%);
+}
+
+
 /***************************************/
 /**** CAPTIONS FOR thumbnail CLASS *****/
 /***************************************/
