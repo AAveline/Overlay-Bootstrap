@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <title>Overlay-bootstrap by karbonn</title>
- <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-<link rel="stylesheet" href="stylesheets/overlay-bootstrap.min.css">
+ <link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="overlay-bootstrap.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -58,11 +58,13 @@
   </div>
 </div><hr >
 <div class="row" id="overlay">
+
+
 	<div class="col-md-12"><hr>
-    <h1 class="text-center">Overlay</h1><hr><div class="col-md-6">
+    <h1 class="text-center">Overlay</h1><hr><div class="col-md-6"><h2 class="text-info">Panels</h2>
     <blockquote>
   <h3>6 styles for the 6 Bootstrap's panels:</h3>
-  <small class="text-muted">Default  </small>
+  <small class="text-muted">Default <i class="fa fa-camera-retro fa-lg"></i> </small>
   <small class="text-primary">Primary</small>
   <small class="text-success">Success</small>
   <small class="text-warning">Warning</small>
@@ -72,11 +74,31 @@
 </div><div class="col-md-6">
 <blockquote class="pull-right">
   <h3>4 displays settings</h3>
-  <small class="text-primary">Top to bottom <cite title="Source Title">(down in Overlay Bootstrap) </cite></small>
-  <small class="text-primary">Bottom to top <cite title="Source Title">(up in Overlay Bootstrap) </cite></small>
-  <small class="text-primary">Left to right <cite title="Source Title">(left in Overlay Bootstrap) </cite></small>
-  <small class="text-primary">Right to left <cite title="Source Title">(right in Overlay Bootstrap) </cite></small>
-</blockquote></div>
+  <small class="text-primary">Top to bottom <cite title="Source Title">| class: .panel-'style-desiring'-overlay-down </cite></small>
+  <small class="text-primary">Bottom to top <cite title="Source Title">| class: .panel-'style-desiring'-overlay-up </cite></small>
+  <small class="text-primary">Left to right <cite title="Source Title">| class: .panel-'style-desiring'-overlay-left </cite></small>
+  <small class="text-primary">Right to left <cite title="Source Title">| class: .panel-'style-desiring'-overlay-right  </cite></small>
+</blockquote></div></div>
+<div class="col-md-12">
+<hr>
+<div class="col-md-6">
+<blockquote ><h2 class="text-info">Jumbotron</h2>
+  <h3>4 displays settings</h3>
+  <small class="text-primary">Top to bottom <cite title="Source Title">| class: .jumbotron-overlay-down </cite></small>
+  <small class="text-primary">Bottom to top <cite title="Source Title">| class: .jumbotron-overlay-up </cite></small>
+  <small class="text-primary">Left to right <cite title="Source Title">| class: .jumbotron-overlay-left </cite></small>
+  <small class="text-primary">Right to left <cite title="Source Title">| class: .jumbotron-overlay-right </cite></small>
+</blockquote>
+</div>
+<div class="col-md-6">
+<blockquote class="pull-right" ><h2 class="text-info">List Groups</h2>
+  <h3>4 displays settings</h3>
+  <small class="text-primary">Top to bottom <cite title="Source Title">| class: .jumbotron-overlay-down </cite></small>
+  <small class="text-primary">Bottom to top <cite title="Source Title">| class: .jumbotron-overlay-up  </cite></small>
+  <small class="text-primary">Left to right <cite title="Source Title">| class: .jumbotron-overlay-left  </cite></small>
+  <small class="text-primary">Right to left <cite title="Source Title">| class: .jumbotron-overlay-right  </cite></small>
+</blockquote>
+</div>
    </div>
 </div><hr>
 	<div class="row">
@@ -144,7 +166,7 @@
 
 				<div class="panel-default-overlay-up">
 					<h3>Default Overlay</h3>
-                    
+                  
 
 
 				</div>
@@ -922,6 +944,89 @@
 			</div>
 		</div>
 </div>
+<div class="col-md-12"><hr><h2>Jumbotron overlays</h2><hr></div>
+<div class="row">
+<div class="col-md-4">
+<div class="jumbotron">
+	<h1>Bottom To Top</h1>
+    <div class="jumbotron-overlay-up">
+   
+    
+    <h2 class="text-info"></h2>
+    
+    </div>
+    </div> <h2 class="text-info">.jumbotron-overlay-up</h2></div>
+    <div class="col-md-4">
+    <div class="jumbotron">
+	<h1>Top To Bottom</h1>
+    <div class="jumbotron-overlay-down">
+
+    <h2 class="text-info"></h2>
+    
+    </div>
+    </div> <h2 class="text-info">.jumbotron-overlay-down</h2></div>
+    <div class="col-md-4">
+    <div class="jumbotron">
+	<h1>Left To Right</h1>
+    <div class="jumbotron-overlay-left">
+   
+   
+    </div></div>
+     <h2 class="text-info">.jumbotron-overlay-left</h2>
+    </div>
+    <div class="col-md-4">
+    <div class="jumbotron">
+	<h1>Right To Left</h1>
+    <div class="jumbotron-overlay-right">
+  
+   
+    
+    </div>
+    </div>
+    <h2 class="text-info">.jumbotron-overlay-right</h2>
+    </div>
+    <div class="col-md-12"><hr><h2>List groups overlays</h2><hr></div>
+    	<div class="col-md-3">
+    		<ul class="list-group">
+  				<li class="list-group-item">
+    Cras justo odio
+    <div class="list-group-item-overlay-up">
+    	<h4 class="text-info">.list-group-item-overlay-up</h4>
+    </div>
+  </li>
+  </ul>
+    </div>
+<div class="col-md-3">
+    		<ul class="list-group">
+  				<li class="list-group-item">
+    Cras justo odio
+    <div class="list-group-item-overlay-down">
+    	<h4 class="text-info">.list-group-item-overlay-down</h4>
+    </div>
+  </li>
+  
+  </ul>
+    </div>
+    <div class="col-md-3">
+    		<ul class="list-group">
+  				<li class="list-group-item">
+    Cras justo odio
+    <div class="list-group-item-overlay-left">
+    	<h4 class="text-info">.list-group-item-overlay-left</h4>
+    </div>
+  </li>
+  </ul>
+    </div>
+    <div class="col-md-3">
+    		<ul class="list-group">
+  				<li class="list-group-item">
+    Cras justo odio
+    <div class="list-group-item-overlay-right">
+    	<h4 class="text-info">.list-group-item-overlay-right</h4>
+    </div>
+  </li>
+  </ul>
+    </div>
 </div>
 <hr>
 <div class="row" id="caption">
@@ -1226,8 +1331,8 @@
 
 
 </div>
-<script type="text/javascript" src="javascripts/jquery.js"></script>
-<script type="text/javascript" src="javascripts/bootstrap.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="bootstrap.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('button.btn').click(function(){
