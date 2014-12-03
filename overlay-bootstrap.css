@@ -3,7 +3,7 @@
 
 /***************************************/
 /********** OVERLAY BOOTSTRAP **********/
-/******** V 1.0 @Copyright 2014 ********/
+/******** V 1.1 @Copyright 2014 ********/
 /************* Open Source *************/
 /*********** Aymeric Aveline ***********/
 
@@ -31,6 +31,7 @@
 	color:#333;
 	visibility: hidden; 
 	opacity: 0;
+	margin: 0 auto;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
@@ -880,6 +881,7 @@
 	color:#333;
 	visibility: hidden; 
 	opacity: 0;
+	padding: 10px 15px;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
@@ -907,6 +909,7 @@
 	color:#333;
 	visibility: hidden; 
 	opacity: 0;
+	padding: 10px 15px;
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out; 
 	-ms-transition: all 0.5s ease-in-out;
@@ -935,6 +938,7 @@
 	color:#333; 
 	visibility: hidden; 
 	opacity: 0; 
+	padding: 10px 15px;
 	-webkit-transition: all 0.5s ease-in-out; 
 	-moz-transition: all 0.5s ease-in-out; 
 	-ms-transition: all 0.5s ease-in-out; 
@@ -963,6 +967,7 @@
 	color:#333; 
 	visibility: hidden; 
 	opacity: 0; 
+	padding: 10px 15px;
 	-webkit-transition: all 0.5s ease-in-out; 
 	-moz-transition: all 0.5s ease-in-out; 
 	-ms-transition: all 0.5s ease-in-out; 
@@ -1007,7 +1012,19 @@
 #caption-right h1, #caption-right h2, #caption-right h3, #caption-right h4, #caption-right h5, #caption-right h6, #caption-right p {
 	color:#FFF;
 }
-
+#caption-half-down h1, #caption-half-down h2, #caption-half-down h3, #caption-half-down h4, #caption-half-down h5, #caption-half-down h6, #caption-half-down p {
+	color:#FFF;
+	
+}
+#caption-half-up h1, #caption-half-up h2, #caption-half-up h3, #caption-half-up h4, #caption-half-up h5, #caption-half-up h6, #caption-half-up p {
+	color:#FFF;
+	margin-top:5%;
+	
+}
+#caption-half-up a, #caption-half-up button{
+	
+	margin-top:5%;
+}
 
 /***************************************/
 /************** CAPTION UP *************/
@@ -1022,6 +1039,8 @@
 	background-color:#22334d;	
 	visibility: hidden; 
 	opacity: 0;
+	margin-left:-4px;
+	margin-top:4px;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-ms-transition: all 0.5s ease-in-out;
@@ -1120,3 +1139,68 @@
     -webkit-transform: translateX(100%);  
     transform: translateX(100%);
 }
+
+/***************************************/
+/********** CAPTION HALF DOWN **********/
+/***************************************/
+
+#caption-half-down{
+	position: absolute;
+	bottom: 100%;
+	left:0;
+	width: 100%;
+	height:50%;
+	background-color:#22334d;	
+	visibility: hidden; 
+	opacity: 0;
+	border-bottom:ridge grey 1px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 
+	text-align:center;
+}
+.thumbnail:hover #caption-half-down{
+	visibility: visible;
+	opacity: 0.9;
+	-moz-transform: translateY(100%);  
+    -o-transform: translateY(100%);  
+    -webkit-transform: translateY(100%);  
+    transform: translateY(100%);
+	height:50%;
+}
+
+/***************************************/
+/*********** CAPTION HALF UP ***********/
+/***************************************/
+
+#caption-half-up{
+	position: absolute;
+	top: 100%
+	left:0px;
+	margin-left:-4px;
+	margin-top:4px;
+	border-top:ridge grey 1px;
+	width: 100%;
+	height:auto;
+	background-color:#22334d;	
+	visibility: hidden; 
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; 
+	text-align:center;
+	
+}
+.thumbnail:hover #caption-half-up{
+	visibility: visible;
+	opacity: 0.9;
+	height:50%;
+	-moz-transform: translateY(-100%);  
+    -o-transform: translateY(-100%);  
+    -webkit-transform: translateY(-100%);  
+    transform: translateY(-100%);
+}	
