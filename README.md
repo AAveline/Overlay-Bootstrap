@@ -43,6 +43,7 @@ By default, Overlay Bootstrap contains 6 differents styles and 4 displays settin
 - Left to right (right in Overlay Bootstrap) 
 - Right to left (left in Overlay Bootstrap)
 - Half-down | half-up
+
 ## How to use Overlay Bootstrap? ##
 
 Overlay:
