@@ -36,13 +36,13 @@ By default, Overlay Bootstrap contains 6 differents styles and 4 displays settin
 
 ### Caption: ###
 
-#### 4 displays settings: ####
+#### 5 displays settings: ####
 
 - Bottom to top (up in Overlay Bootstrap) 
 - Top to bottom (down in Overlay Bootstrap) 
 - Left to right (right in Overlay Bootstrap) 
 - Right to left (left in Overlay Bootstrap)
-
+- Half-down | half-up
 ## How to use Overlay Bootstrap? ##
 
 Overlay:
@@ -87,6 +87,7 @@ Caption on image
 For a bottom to top caption
     
 ```
+    
         <div class="caption" id="caption-up">
         
          <h3>Thumbnail label</h3>
@@ -110,6 +111,7 @@ For a bottom to top caption
 For a left to right caption
     
 ```
+   
     <div class="caption" id="caption-right">
          <h3>Thumbnail label</h3>
          <p>Some sample text. </p>
@@ -124,3 +126,13 @@ For a left to right caption
     </div>
     </div>
 ```
+For half-up and half-down
+    ```
+    
+        <div class="caption" id="caption-half-down">
+            Overlay Down
+        </div>
+        <div class="caption" id="caption-half-up">
+            Overlay Up
+        </div>
+    </div>
