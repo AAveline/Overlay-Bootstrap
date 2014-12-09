@@ -128,8 +128,8 @@ For a left to right caption
     </div>
 ```
 For half-up and half-down
-    ```
     
+    ```
         <div class="caption" id="caption-half-down">
             Overlay Down
         </div>
