@@ -1,4 +1,5 @@
 
+
 @charset "utf-8";
 /* CSS Document */
 /***************************************/
@@ -877,32 +878,32 @@ max-width:400px;
 position:relative;
 overflow:hidden;
 }
-#caption-up h1, #caption-up h2, #caption-up h3, #caption-up h4, #caption-up h5, #caption-up h6, #caption-up p {
+.caption-up h1, .caption-up h2, .caption-up h3, .caption-up h4, .caption-up h5, .caption-up h6, .caption-up p {
 color:#FFF;
 }
-#caption-down > h1, #caption-down > h2, #caption-down > h3 , #caption-down h4, #caption-down h5, #caption-down h6, #caption-down p {
+.caption-down > h1, .caption-down > h2, .caption-down > h3 , .caption-down h4, .caption-down h5, .caption-down h6, .caption-down p {
 color:#FFF;
 }
-#caption-left h1, #caption-left h2, #caption-left h3, #caption-left h4, #caption-left h5, #caption-left h6, #caption-left p {
+.caption-left h1, .caption-left h2, .caption-left h3, .caption-left h4, .caption-left h5, .caption-left h6, .caption-left p {
 color:#FFF;
 }
-#caption-right h1, #caption-right h2, #caption-right h3, #caption-right h4, #caption-right h5, #caption-right h6, #caption-right p {
+.caption-right h1, .caption-right h2, .caption-right h3, .caption-right h4, .caption-right h5, .caption-right h6, .caption-right p {
 color:#FFF;
 }
-#caption-half-down h1, #caption-half-down h2, #caption-half-down h3, #caption-half-down h4, #caption-half-down h5, #caption-half-down h6, #caption-half-down p {
+.caption-half-down h1, .caption-half-down h2, .caption-half-down h3, .caption-half-down h4, .caption-half-down h5, .caption-half-down h6, .caption-half-down p {
 color:#FFF;
 }
-#caption-half-up h1, #caption-half-up h2, #caption-half-up h3, #caption-half-up h4, #caption-half-up h5, #caption-half-up h6, #caption-half-up p {
+.caption-half-up h1, .caption-half-up h2, .caption-half-up h3, .caption-half-up h4, .caption-half-up h5, .caption-half-up h6, .caption-half-up p {
 color:#FFF;
 margin-top:5%;
 }
-#caption-half-up a, #caption-half-up button{
+.caption-half-up a, .caption-half-up button{
 margin-top:5%;
 }
 /***************************************/
 /************** CAPTION UP *************/
 /***************************************/
-#caption-up{
+.caption-up{
 position: absolute;
 top: 100%
 left:0;
@@ -919,7 +920,7 @@ margin-top:4px;
 -o-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;
 }
-.thumbnail:hover #caption-up{
+.thumbnail:hover .caption-up{
 visibility: visible;
 opacity: 0.9;
 -moz-transform: translateY(-100%);
@@ -930,7 +931,7 @@ transform: translateY(-100%);
 /***************************************/
 /************* CAPTION DOWN ************/
 /***************************************/
-#caption-down{
+.caption-down{
 position: absolute;
 bottom: 100%;
 left:0;
@@ -945,7 +946,7 @@ opacity: 0;
 -o-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;
 }
-.thumbnail:hover #caption-down{
+.thumbnail:hover .caption-down{
 visibility: visible;
 opacity: 0.9;
 -moz-transform: translateY(100%);
@@ -956,7 +957,7 @@ transform: translateY(100%);
 /***************************************/
 /************* CAPTION LEFT ************/
 /***************************************/
-#caption-left{
+.caption-left{
 position: absolute;
 bottom:0;
 left:100%;
@@ -971,7 +972,7 @@ opacity: 0;
 -o-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;
 }
-.thumbnail:hover #caption-left{
+.thumbnail:hover .caption-left{
 visibility: visible;
 opacity: 0.9;
 -moz-transform: translateX(-100%);
@@ -982,7 +983,7 @@ transform: translateX(-100%);
 /***************************************/
 /************ CAPTION RIGHT ************/
 /***************************************/
-#caption-right{
+.caption-right{
 position: absolute;
 bottom:0;
 left:-100%;
@@ -997,7 +998,7 @@ opacity: 0;
 -o-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;
 }
-.thumbnail:hover #caption-right{
+.thumbnail:hover .caption-right{
 visibility: visible;
 opacity: 0.9;
 -moz-transform: translateX(100%);
@@ -1008,7 +1009,7 @@ transform: translateX(100%);
 /***************************************/
 /********** CAPTION HALF DOWN **********/
 /***************************************/
-#caption-half-down{
+.caption-half-down{
 position: absolute;
 bottom: 100%;
 left:0;
@@ -1025,7 +1026,7 @@ border-bottom:ridge grey 1px;
 transition: all 0.5s ease-in-out;
 text-align:center;
 }
-.thumbnail:hover #caption-half-down{
+.thumbnail:hover .caption-half-down{
 visibility: visible;
 opacity: 0.9;
 -moz-transform: translateY(100%);
@@ -1037,7 +1038,7 @@ height:50%;
 /***************************************/
 /*********** CAPTION HALF UP ***********/
 /***************************************/
-#caption-half-up{
+.caption-half-up{
 position: absolute;
 top: 100%
 left:0px;
@@ -1056,7 +1057,7 @@ opacity: 0;
 transition: all 0.5s ease-in-out;
 text-align:center;
 }
-.thumbnail:hover #caption-half-up{
+.thumbnail:hover .caption-half-up{
 visibility: visible;
 opacity: 0.9;
 height:50%;
