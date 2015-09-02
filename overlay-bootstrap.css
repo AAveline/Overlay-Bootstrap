@@ -1169,7 +1169,7 @@ transform: translateY(-100%);
 }
 
 @-moz-keyframes animation-one {
-  0%   { width:  }
+  0%   { width: 0%; }
 
   100% { width: 100%; }
 }
