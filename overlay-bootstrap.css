@@ -558,8 +558,6 @@ width: 100%;
 height:100%;
 background-color:#22334d;
 color:#333;
-visibility: hidden;
-opacity: 0;
 -webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
 -ms-transition: all 0.5s ease-in-out;
@@ -568,8 +566,6 @@ transition: all 0.5s ease-in-out;
 }
 .jumbotron:hover .jumbotron-overlay-up{
 z-index:1;
-visibility: visible;
-opacity: 0.9;
 -moz-transform: translateY(-100%);
 -o-transform: translateY(-100%);
 -webkit-transform: translateY(-100%);
@@ -584,8 +580,6 @@ width: 100%;
 height:100%;
 background-color:#22334d;
 color:#333;
-visibility: hidden;
-opacity: 0;
 -webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
 -ms-transition: all 0.5s ease-in-out;
@@ -593,8 +587,6 @@ opacity: 0;
 transition: all 0.5s ease-in-out;
 }
 .jumbotron:hover .jumbotron-overlay-down{
-visibility: visible;
-opacity: 0.9;
 -moz-transform: translateY(100%);
 -o-transform: translateY(100%);
 -webkit-transform: translateY(100%);
@@ -609,8 +601,6 @@ width: 100%;
 height:100%;
 background-color:#22334d;
 color:#333;
-visibility: hidden;
-opacity: 0;
 -webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
 -ms-transition: all 0.5s ease-in-out;
@@ -618,8 +608,6 @@ opacity: 0;
 transition: all 0.5s ease-in-out;
 }
 .jumbotron:hover .jumbotron-overlay-left{
-visibility: visible;
-opacity: 0.9;
 -moz-transform: translateX(100%);
 -o-transform: translateX(100%);
 -webkit-transform: translateX(100%);
@@ -634,8 +622,6 @@ width: 100%;
 height:100%;
 background-color:#22334d;
 color:#333;
-visibility: hidden;
-opacity: 0;
 -webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
 -ms-transition: all 0.5s ease-in-out;
@@ -643,8 +629,6 @@ opacity: 0;
 transition: all 0.5s ease-in-out;
 }
 .jumbotron:hover .jumbotron-overlay-right{
-visibility: visible;
-opacity: 0.9;
 -moz-transform: translateX(-100%);
 -o-transform: translateX(-100%);
 -webkit-transform: translateX(-100%);
