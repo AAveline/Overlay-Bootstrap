@@ -91,7 +91,7 @@ For a bottom to top caption
     
 ```
     
-        <div class="caption" id="caption-up">
+        <div class="caption caption-up">
         
          <h3>Thumbnail label</h3>
          <p>Some sample text. </p>
@@ -115,7 +115,7 @@ For a left to right caption
     
 ```
    
-    <div class="caption" id="caption-right">
+    <div class="caption caption-right">
          <h3>Thumbnail label</h3>
          <p>Some sample text. </p>
          <p>
@@ -132,10 +132,10 @@ For a left to right caption
 For half-up and half-down
     
     ```
-        <div class="caption" id="caption-half-down">
+        <div class="caption caption-half-down">
             Overlay Down
         </div>
-        <div class="caption" id="caption-half-up">
+        <div class="caption caption-half-up">
             Overlay Up
         </div>
     </div>
